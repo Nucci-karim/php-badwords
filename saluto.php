@@ -4,7 +4,11 @@ $cognome = $_GET['cognomePersona'];
 
 $paragraph = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem obcaecati doloribus debitis quae illo sint qui nulla illum dicta cupiditate quas nemo veritatis, labore accusamus dolores, aliquid, quo nisi dolorum.';
 
-$pCensured = str_replace('dolor', '***', $paragraph)
+$pCensured = str_replace('dolor', '***', $paragraph);
+
+explode(',', $paragraph);
+
+var_dump( explode(',', $paragraph) );
 
 
 ?>
