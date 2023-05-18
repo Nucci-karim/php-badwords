@@ -1,4 +1,13 @@
+<?php
+$nome = $_GET['nomePersona'];
+$cognome = $_GET['cognomePersona'];
 
+$paragraph = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem obcaecati doloribus debitis quae illo sint qui nulla illum dicta cupiditate quas nemo veritatis, labore accusamus dolores, aliquid, quo nisi dolorum.';
+
+$pCensured = str_replace('dolor', '***', $paragraph)
+
+
+?>
 
 
 <!DOCTYPE html>
@@ -10,6 +19,7 @@
     <title>risposta</title>
 </head>
 <body>
-    <h1>Ciao <?php echo $_GET['nomePersona'].' '.$_GET['cognomePersona']?> benvenuto!</h1>
+    <h1>Ciao <?php echo $nome.' '.$cognome?> benvenuto!</h1>
+    <p><?php echo $pCensured?></p>
 </body>
 </html>
