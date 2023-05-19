@@ -19,6 +19,9 @@
         <label for="">Cognome</label>
         <input type="text" placeholder="Inserisci il tuo cognome" name="cognomePersona">
 
+        <label for="">descrizione</label>
+        <textarea name="paragrafo" id="" cols="30" rows="30"></textarea>
+
         <button type="submit">Invia</button>
     </form>
 </body>
